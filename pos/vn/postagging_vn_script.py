@@ -1,23 +1,25 @@
 import py_vncorenlp
 from helpers.check_models import check_models
 from helpers.handle_postag import process_postag as process_word_postag
+import os
+
+abspath = os.path.abspath("./pos/vn/")
+
+# Example usage
+file_path = "./pos/vn/VNCoreNLP-1.2.jar"
+dir_path = "./pos/vn/models"
 
 
 # Example usage
-file_path = "./VNCoreNLP-1.2.jar"
-dir_path = "./models"
-
-
-# Example usage
-input_file = "./output/output_corpus.txt"  
-output_file = './output/pre_output.txt' 
-postag_output_file = './output/final_output.txt'
+input_file = "./pos/vn/output/output_corpus.txt"  
+output_file = './pos/vn/output/pre_output.txt' 
+postag_output_file = './pos/vn/output/final_output.txt'
 
 if ( not check_models(file_path, dir_path) ) :
-    py_vncorenlp.download_model(save_dir='./')
+    py_vncorenlp.download_model(save_dir=abspath)
 
 # Load VnCoreNLP from the local working folder that contains both `VnCoreNLP-1.2.jar` and `models` 
-model = py_vncorenlp.VnCoreNLP(annotators=["wseg", "pos"], save_dir='./')
+model = py_vncorenlp.VnCoreNLP(annotators=["wseg", "pos"], save_dir= abspath)
 # Equivalent to: model = py_vncorenlp.VnCoreNLP(, "ner", "parse"], save_dir='/absolute/path/to/vncorenlp')
 
 # Annotate a raw corpus

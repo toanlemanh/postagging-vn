@@ -1,11 +1,18 @@
-1	Anh	N	_	_		_
-2	không	R	_	_		_
-3	yêu	V	_	_		_
+1	Tiến_Thành	Np	_	_		_
+2	ơi	T	_	_		_
+3	,	CH	_	_		_
 4	em	N	_	_		_
-5	!	CH	_	_		_
-6	dỗi	V	_	_		_
+5	yêu	V	_	_		_
+6	anh	N	_	_		_
+7	!	CH	_	_		_
 
-1	Anh	N	_	_		_
-2	yêu	V	_	_		_
-3	em_em	N	_	_		_
+1	Xin_lỗi	V	_	_		_
+2	,	CH	_	_		_
+3	anh	N	_	_		_
+4	chỉ	R	_	_		_
+5	coi	V	_	_		_
+6	em	N	_	_		_
+7	là	V	_	_		_
+8	chị	N	_	_		_
+9	!	CH	_	_		_
 
