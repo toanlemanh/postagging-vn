@@ -1,0 +1,11 @@
+1	Anh	N	_	_		_
+2	không	R	_	_		_
+3	yêu	V	_	_		_
+4	em	N	_	_		_
+5	!	CH	_	_		_
+6	dỗi	V	_	_		_
+
+1	Anh	N	_	_		_
+2	yêu	V	_	_		_
+3	em_em	N	_	_		_
+
